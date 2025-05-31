@@ -15,7 +15,6 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   wechat = pkgs.callPackage ./pkgs/wechat { };
-  rtl8851bu = pkgs.callPackage ./pkgs/rtl8851bu { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }

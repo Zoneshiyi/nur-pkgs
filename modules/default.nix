@@ -1,5 +1,5 @@
 {
   # Add your NixOS modules here
   #
-  # my-module = ./my-module;
+  rtl8851bu = ./rtl8851bu.nix;
 }
