@@ -47,6 +47,9 @@ pkgs.stdenv.mkDerivation rec{
     description = "Driver for RTL8851BU";
     homepage = "https://github.com/fofajardo/rtl8851bu.git";
     license = licenses.gpl2;
+    sourceProvenance = [
+      sourceTypes.fromSource
+    ];
     platforms = platforms.linux;
   };
 }

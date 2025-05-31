@@ -87,6 +87,9 @@ pkgs.stdenvNoCC.mkDerivation rec{
     description = "WeChat for Linux";
     homepage = "https://linux.weixin.qq.com";
     license = licenses.unfree;
+    sourceProvenance = [
+      sourceTypes.binaryNativeCode
+    ];
     platforms = platforms.linux;
   };
 }
