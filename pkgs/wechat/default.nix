@@ -80,7 +80,7 @@ pkgs.stdenvNoCC.mkDerivation rec{
     install -Dm444 $wechatLogo $out/share/icons/hicolor/scalable/apps/wechat-logo.svg
     mkdir -p $out/bin
     makeBinaryWrapper $out/wechat/wechat $out/bin/wechat \
-    --suffix LD_LIBRARY_PATH : "${lib.makeLibraryPath librarys}"
+    --suffix LD_LIBRARY_PATH : "${lib.makeLibraryPath wrap-librarys}"
   '';
 
   meta = with lib; {
