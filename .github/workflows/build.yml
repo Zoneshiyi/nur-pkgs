@@ -1,10 +1,14 @@
 name: "Build and populate cache"
 on:
   pull_request:
+    branches-ignore:
+      - dev
   push:
     branches:
       - main
       - master
+    branches-ignore:
+      - dev
   schedule:
     # rebuild everyday at 2:51
     # TIP: Choose a random time here so not all repositories are build at once:
