@@ -19,6 +19,7 @@
   wechat = pkgs.callPackage ./pkgs/wechat { };
   ttf-wps-fonts = pkgs.callPackage ./pkgs/ttf-wps-fonts { };
   alacritty-with-sixel = pkgs.callPackage ./pkgs/alacritty-with-sixel { };
+  splayer = pkgs.callPackage ./pkgs/splayer { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
